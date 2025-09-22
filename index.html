@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Engineer Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+    }
+    header {
+      background: linear-gradient(90deg, #2563eb, #1e40af);
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #1e293b;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    h2 {
+      margin-top: 0;
+      color: #38bdf8;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skill {
+      background: #334155;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .skill:hover {
+      transform: scale(1.1);
+      background: #2563eb;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background: #334155;
+      border-radius: 10px;
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      background: #2563eb;
+    }
+    .contact {
+      text-align: center;
+    }
+    button {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      background: #38bdf8;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #0ea5e9;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      background: #0f172a;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kunal Mxxxxx</h1>
+    <p>🚀 DevOps Engineer | Cloud | Kubernetes | Terraform | SRE Practices</p>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="skills">
+    <h2>🔧 Skills</h2>
+    <div class="skills">
+      <div class="skill">Kubernetes</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Terraform</div>
+      <div class="skill">Jenkins</div>
+      <div class="skill">Google Cloud</div>
+      <div class="skill">Ansible</div>
+      <div class="skill">Prometheus + Grafana</div>
+      <div class="skill">CI/CD Pipelines</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>📂 Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Production-Ready EKS Cluster</h3>
+        <p>Designed modular Terraform setup with GitHub Actions CI/CD to provision EKS with monitoring.</p>
+      </div>
+      <div class="project">
+        <h3>Azure AKS Infra Automation</h3>
+        <p>Automated AKS provisioning with Terraform modules + Key Vault integration for secret management.</p>
+      </div>
+      <div class="project">
+        <h3>IIoT High Availability System</h3>
+        <p>Built resilient MQTT data ingestion system with Kubernetes, Longhorn, Velero & Litmus Chaos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📬 Contact</h2>
+    <p>Interested in collaborating? Let’s connect!</p>
+    <button onclick="showEmail()">Show Email</button>
+    <p id="email" style="margin-top:1rem; font-weight: bold; display:none;">📧 kunalxxxxx@gmail.com</p>
+  </section>
+
+  <footer>
+    © 2025 Kunal Mxxxxx · Built with ❤️ using HTML, CSS & JS
+  </footer>
+
+  <script>
+    function showEmail() {
+      const email = document.getElementById('email');
+      email.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
